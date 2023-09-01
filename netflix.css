@@ -1,0 +1,336 @@
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+
+		}
+		html,body{
+			width: 100%;
+			height:100%;
+
+			
+		}
+		#main{
+			width: 100%;
+			height:calc(100% - 70px);
+            background-color:transparent;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            
+
+
+		}
+		#nav{
+			width: 100%;
+			height: 70px;
+			display:flex;
+			align-items: center;
+			background-color: black;
+			/*justify-content: space-around;*/
+			
+		}
+
+		#nav #img1{
+			width: 10vw;
+			height:5vh;
+			margin-left:5vw;
+			
+
+		}
+		#nav #nav-items{
+			display: flex;
+			gap:2vw;
+			font-size: 0.6vw;
+			margin-left: 4vw;
+
+		
+			
+
+		}
+		#nav #nav-items a{
+			text-decoration: none;
+			color: white;
+
+		}
+		#nav #nav-items a:hover{
+			color:red;
+		}
+		#nav #right-img{
+			display: flex;
+			gap:1.3vw;
+			margin-left:37vw;
+		}
+		
+		#nav #right-img img{
+			width:1.7vw;
+			height: 3vh;
+		 cursor: pointer;
+
+		}
+		#nav #right-img img:hover{
+			scale:1.2;
+		}
+	/*#video{
+			width: 100%;
+			height:100%;
+			background-color:red;		
+		}*/
+		video{
+			z-index: -100;
+			 transform: rotate(270deg);
+			 width: 100%;
+			 height: 260%;
+			 border-radius: 0;
+			 position:relative;
+			 top:-10%;
+			 opacity: 0.8;
+			right: 240px;
+			/**/
+		}
+		#film-name{
+			position: relative;
+			z-index: 2;
+			width:40vw;
+			height: 60vh;
+			background-color: transparent;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-family: sans-serif;
+			color: white;
+		}
+		#film-name h1{
+			font-size: 6vw;
+			color: red;
+
+		}
+		#film-name h2{
+			font-size: 2vw;
+			color: black;
+
+		}
+		#film-name p{
+			margin-left: 10px;
+			text-align: center;
+		}
+		#buttons{
+			width:40vw;
+			height: 10vh;
+			display: flex;
+			justify-content: center;
+			gap:30px;
+			
+		}
+		#buttons #b1{
+			width: 8vw;
+			height: 5vh;
+			border-radius: 3px;
+			border:none;
+			font-size: 1.2vw;
+			background-color: black;
+			color: white;
+			cursor: pointer;
+
+		}
+		#buttons #b1:hover{
+			background-color: red;
+			scale:1.2;
+		}
+		#buttons #b2{
+			width: 8vw;
+			height: 5vh;
+			border-radius: 3px;
+			border:none;
+			font-size: 1.2vw;
+			background-color: white;
+			color: black;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+		}
+		#buttons #b2 span{
+			font-size: 2vw;
+		}
+		#buttons #b2:hover{
+			background-color:red;
+			scale:1.2;
+		}
+		#film-list{
+			position: absolute;
+			top:75%;
+			width:100%;
+			height:180px;
+			background-color: black;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-around;
+			box-shadow: 5px 5px 5px #000; 
+			box-shadow: -5px -5px 5px #000; 
+		
+		}
+		#box1{
+			width:130px;
+			height: 170px;
+			background-image: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F03%2Faiw-payoff_1_sheet-lg-2000.jpg");
+			background-size:cover; 
+			border-radius: 2px;
+			cursor: pointer;
+		}
+		#box1:hover{
+			scale:1.1;
+
+		}
+		#box2{
+			width:130px;
+			height: 170px;
+			background-image: url("https://static.wikia.nocookie.net/disney/images/0/0f/Captain-america-2-poster-us-full.jpg/revision/latest/scale-to-width-down/515?cb=20221023222652");
+			background-size:cover; 
+			border-radius: 2px;
+			cursor: pointer;
+		}
+		#box2:hover{
+			scale:1.1;
+		}
+		#box3{
+			width:130px;
+			height: 170px;
+			background-image: url("https://images.squarespace-cdn.com/content/v1/596df56f46c3c47ac18c3cfe/1516569965086-ZN7NMMVRYL7YCTI838OF/Iron_Man_2_Poster.jpg?format=1500w");
+			background-size:cover; 
+			border-radius: 2px;
+			cursor: pointer;
+		}
+		#box3:hover{
+			scale:1.1;
+		}
+		#box4{
+			width:130px;
+			height: 170px;
+			background-image: url("https://2.bp.blogspot.com/-wd_usiMkUto/UYf2HRdZ_wI/AAAAAAAAD6Q/PF_RQjynYiI/s1600/iron+man+3+poster.jpg");
+			background-size:cover; 
+			border-radius: 2px;
+			cursor: pointer;
+		}
+		#box4:hover{
+			scale:1.1;
+		}
+		#box5{
+			width:130px;
+			height: 170px;
+			background-image: url("https://3.bp.blogspot.com/-TylNGuP5w2E/ValgHYoZnXI/AAAAAAAAKw8/jjkcHFTtCCM/s1600/ant-man-poster-3.jpg");
+			background-size:cover; 
+			border-radius: 2px;
+			cursor: pointer;
+		}
+		#box5:hover{
+			scale:1.1;
+		}
+		#box6{
+			width:130px;
+			height: 170px;
+			background-image: url("https://qph.cf2.quoracdn.net/main-qimg-48b4ba5719074d3694f16c6429111b6c-lq");
+			background-size:cover; 
+			border-radius: 2px;
+			cursor: pointer;
+		}
+		#box6:hover{
+			scale:1.1;
+		}
+		#box7{
+			width:130px;
+			height: 170px;
+			background-image: url("https://static.wikia.nocookie.net/marveldatabase/images/2/2d/Incredible_Hulk_Vol_2_80.jpg/revision/latest?cb=20200507024005");
+			background-size:cover; 
+			border-radius: 2px;
+			cursor: pointer;
+		}
+		#box7:hover{
+			scale:1.1;
+		}
+		#box8{
+			width:130px;
+			height: 170px;
+			background-image: url("https://static.wikia.nocookie.net/marvelcinematicuniverse/images/c/c7/Avengers_Age_Of_Ultron-poster1.jpg/revision/latest/scale-to-width-down/1200?cb=20150224202250");
+			background-size:cover; 
+			border-radius: 2px;
+			cursor: pointer;
+		}
+		#box8:hover{
+			scale:1.1;
+		}
+
+		@media  (max-width:600px){
+
+			#nav{
+				height: 80px;
+				
+			}
+			#nav #img1{
+				width: 20vw;
+				height: 4vh;
+			}
+			#nav #nav-items {
+				display:none;
+
+			}
+			#nav #right-img{
+				gap:3vw;
+				margin-left:50vw;
+			}
+			#nav #right-img img{
+			width:5vw;
+			height: 3vh;
+		 cursor: pointer;
+
+		}
+		#main video{
+			top:-19%;
+		}
+		#film-name{
+			
+			width: 90vw;
+			align-items: center;
+			margin-left: 100px;
+
+
+		}
+		#film-name h1{
+			font-size: 13vw;
+
+		}
+		#film-name h2{
+			font-size: 3.5vw;
+		}
+		#film-name p{
+			font-size: 3vw;
+		}
+		#buttons #b1{
+			width:18vw;
+			height: 4vh;
+			font-size: 2vh;
+			border-radius:0;
+			align-items: center;
+
+		}
+		#buttons #b2{
+			width:18vw;
+			height: 4vh;
+			font-size: 2vh;
+			border-radius:0;
+			align-items: center;
+
+		}
+		#buttons #b2 span{
+			font-size: 3vw;
+		}
+		#film-list{
+			min-height: 740px;
+			top:67.5%;
+			gap:15px;
+		}
+
+	}
